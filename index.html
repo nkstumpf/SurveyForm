@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>freeCodeCamp Projects: Build a Survey Form</title>
+</head>
+
+<body>
+
+    <h1 id="title">Survey Form</h1>
+
+    <p id="description">This is a survey form</p>
+
+    <form action="" id="survey-form">
+        <div class="formrow">
+            <div class="label">
+                <label id="name-label" for="Name">Name:</label>
+            </div>
+            <div class="input">
+                <input type="text" name="name" id="name" placeholder="First Name" required>
+            </div>
+        </div>
+        <div class="formrow">
+            <div class="label">
+                <label id="email-label" for="name">Email:</label>
+            </div>
+            <div class="input">
+                <input type="email" name="email" id="email" placeholder="Name@email.com" required>
+            </div>
+        </div>
+        <div class="formrow">
+            <div class="label">
+                <label id="number-label" for="Name">Age</label>
+            </div>
+            <div class="input">
+                <input type="number" name="number" min="6" max="120" id="number" placeholder="18" required>
+            </div>
+        </div>
+        <div class="formrow">
+            <label for="dropdown">Select on option</label>
+            <select name="" id="dropdown">
+                <option disabled-value="default">Select</option>
+                <option value="">Something</option>
+                <option value="">Something</option>
+                <option value="">Something</option>
+            </select>
+        </div>
+        <div class="formrow">
+            <ul>
+                <li>
+                    <label for="">item A</label>
+                    <input type="radio" id="" name="choices" value="choices">
+                </li>
+                <li>
+                    <label for="">item B</label>
+                    <input type="radio" id="" name="choices" value="choices">
+                </li>
+                <li>
+                    <label for="">item C</label>
+                    <input type="radio" id="" name="choices" value="choices">
+                </li>
+            </ul>
+        </div>
+        <div class="formrow">
+            <label for="dropdown">Select on option</label>
+            <select name="" id="dropdown">
+                <option disabled-value="default">Select</option>
+                <option value="">Something</option>
+                <option value="">Something</option>
+                <option value="">Something</option>
+            </select>
+        </div>
+        <div class="formrow">
+            <ul>
+                <li>
+                    <label for="">item A</label>
+                    <input type="checkbox" name="choices" id="" value="choices">
+                </li>
+                <li>
+                    <label for="">item B</label>
+                    <input type="checkbox" name="choices" id="" value="choices">
+                </li>
+                <li>
+                    <label for="">item C</label>
+                    <input type="checkbox" name="choices" id="" value="choices">
+                </li>
+            </ul>
+        </div>
+        <div class="formrow">
+            <label for="">Additional Comments</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
