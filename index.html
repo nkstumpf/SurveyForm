@@ -11,22 +11,22 @@
 
 <body>
 
-    <h1 id="title">Survey Form</h1>
+    <h1 id="title">User Profile</h1>
 
-    <p id="description">This is a survey form</p>
+    <p id="description">Build your gamer profile!</p>
 
     <form action="" id="survey-form">
         <div class="formrow">
             <div class="label">
-                <label id="name-label" for="Name">Name:</label>
+                <label id="name-label" for="Name">Gamer Tag</label>
             </div>
             <div class="input">
-                <input type="text" name="name" id="name" placeholder="First Name" required>
+                <input type="text" name="name" id="name" placeholder="Gamer_Tag" required>
             </div>
         </div>
         <div class="formrow">
             <div class="label">
-                <label id="email-label" for="name">Email:</label>
+                <label id="email-label" for="email">Email:</label>
             </div>
             <div class="input">
                 <input type="email" name="email" id="email" placeholder="Name@email.com" required>
@@ -34,34 +34,52 @@
         </div>
         <div class="formrow">
             <div class="label">
-                <label id="number-label" for="Name">Age</label>
+                <label id="number-label" for="age">Age</label>
             </div>
             <div class="input">
                 <input type="number" name="number" min="6" max="120" id="number" placeholder="18" required>
             </div>
         </div>
         <div class="formrow">
-            <label for="dropdown">Select on option</label>
-            <select name="" id="dropdown">
-                <option disabled-value="default">Select</option>
-                <option value="">Something</option>
-                <option value="">Something</option>
-                <option value="">Something</option>
-            </select>
+            <div class="label">
+                <label for="dropdown">Select Your Platform</label>
+            </div>
+            <div class="input">
+                <select name="" id="dropdown">
+                    <option disabled-value="default">Select</option>
+                    <option value="">Playstation 4</option>
+                    <option value="">XBOX One</option>
+                    <option value="">Nintendo Switch</option>
+                    <option value="">PC</option>
+                </select>
+            </div>
         </div>
-        <div class="formrow">
+        <div class="list">
+            <p>Which type of experience do you prefer</p>
             <ul>
                 <li>
-                    <label for="">item A</label>
-                    <input type="radio" id="" name="choices" value="choices">
+                    <div class="label">
+                        <label for="">Solo Campaigns / Story Mode</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" id="" name="choices" value="choices">
+                    </div>
                 </li>
                 <li>
-                    <label for="">item B</label>
-                    <input type="radio" id="" name="choices" value="choices">
+                    <div class="label">
+                        <label for="">Cooperative Gameplay</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" id="" name="choices" value="choices">
+                    </div>
                 </li>
                 <li>
-                    <label for="">item C</label>
-                    <input type="radio" id="" name="choices" value="choices">
+                    <div class="label">
+                        <label for="">Online PVP</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" id="" name="choices" value="choices">
+                    </div>
                 </li>
             </ul>
         </div>
@@ -75,23 +93,32 @@
             </select>
         </div>
         <div class="formrow">
+            Which Genres do you play? (select all that apply)
             <ul>
                 <li>
-                    <label for="">item A</label>
+                    <label for="">First Person Shooter</label>
                     <input type="checkbox" name="choices" id="" value="choices">
                 </li>
                 <li>
-                    <label for="">item B</label>
+                    <label for="">Third Person Shooter</label>
                     <input type="checkbox" name="choices" id="" value="choices">
                 </li>
                 <li>
-                    <label for="">item C</label>
+                    <label for="">RPG</label>
+                    <input type="checkbox" name="choices" id="" value="choices">
+                </li>
+                <li>
+                    <label for="">Sports / Racing</label>
+                    <input type="checkbox" name="choices" id="" value="choices">
+                </li>
+                <li>
+                    <label for="">Puzzle</label>
                     <input type="checkbox" name="choices" id="" value="choices">
                 </li>
             </ul>
         </div>
         <div class="formrow">
-            <label for="">Additional Comments</label>
+            <label for="comments">Additional Comments</label>
             <textarea name="" id="" cols="30" rows="10"></textarea>
             <button id="submit">Submit</button>
         </div>
