@@ -9,120 +9,142 @@
     <title>freeCodeCamp Projects: Build a Survey Form</title>
 </head>
 
-<body>
+<body class="background">
 
-    <h1 id="title">User Profile</h1>
+    <div class="formcolumn">
 
-    <p id="description">Build your gamer profile!</p>
+        <div class="formrow center">
+            <h1 id="title">User Profile</h1>
+        </div>
+        <hr>
+        <div class="formrow center">
+            <p id="description">Build your gamer profile!</p>
+        </div>
 
-    <form action="" id="survey-form">
-        <div class="formrow">
-            <div class="label">
-                <label id="name-label" for="Name">Gamer Tag</label>
+        <form action="" id="survey-form">
+            <div id="container">
+                <div id="profile-pic">
+                    <img src="https://workhound.com/wp-content/uploads/2017/05/placeholder-profile-pic.png" alt=""
+                        width="150px" height="150px">
+                </div>
+                <div id="main-info">
+                    <div class="formrow">
+                        <div class="label">
+                            <label id="name-label" for="Name">Gamer Tag</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="name" id="name" placeholder="Gamer_Tag" required>
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="label">
+                            <label id="email-label" for="email">Email:</label>
+                        </div>
+                        <div class="input">
+                            <input type="email" name="email" id="email" placeholder="Name@email.com" required>
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="label">
+                            <label id="number-label" for="age">Age</label>
+                        </div>
+                        <div class="input">
+                            <input type="number" name="number" min="6" max="120" id="number" placeholder="18" required>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="input">
-                <input type="text" name="name" id="name" placeholder="Gamer_Tag" required>
+            <hr>
+            <div id="select-platform" class="formrow center">
+                <div class="label">
+                    <label for="dropdown">Select Your Platform</label>
+                </div>
+                <div class="input">
+                    <select name="" id="dropdown">
+                        <option disabled-value="default">Select</option>
+                        <option value="">Playstation 4</option>
+                        <option value="">XBOX One</option>
+                        <option value="">Nintendo Switch</option>
+                        <option value="">PC</option>
+                    </select>
+                </div>
             </div>
-        </div>
-        <div class="formrow">
-            <div class="label">
-                <label id="email-label" for="email">Email:</label>
+            <div class="formrow center">
+                <p>Which type of experience do you prefer</p>
             </div>
-            <div class="input">
-                <input type="email" name="email" id="email" placeholder="Name@email.com" required>
+            <div class="formrow">
+                <div class="label">
+                    <label for="">Solo Campaigns / Story Mode</label>
+                </div>
+                <div class="input">
+                    <input type="radio" id="" name="choices" value="choices">
+                </div>
+                <div class="label">
+                    <label for="">Cooperative Gameplay</label>
+                </div>
+                <div class="input">
+                    <input type="radio" id="" name="choices" value="choices">
+                </div>
+                <div class="label">
+                    <label for="">Online PVP</label>
+                </div>
+                <div class="input">
+                    <input type="radio" id="" name="choices" value="choices">
+                </div>
             </div>
-        </div>
-        <div class="formrow">
-            <div class="label">
-                <label id="number-label" for="age">Age</label>
+            <div class="formrow center">
+                <div class="label">
+                    <label for="dropdown">Select an option</label>
+                </div>
+                <div class="input">
+                    <select name="" id="dropdown">
+                        <option disabled-value="default">Select</option>
+                        <option value="">Something</option>
+                        <option value="">Something</option>
+                        <option value="">Something</option>
+                    </select>
+                </div>
             </div>
-            <div class="input">
-                <input type="number" name="number" min="6" max="120" id="number" placeholder="18" required>
-            </div>
-        </div>
-        <div class="formrow">
-            <div class="label">
-                <label for="dropdown">Select Your Platform</label>
-            </div>
-            <div class="input">
-                <select name="" id="dropdown">
-                    <option disabled-value="default">Select</option>
-                    <option value="">Playstation 4</option>
-                    <option value="">XBOX One</option>
-                    <option value="">Nintendo Switch</option>
-                    <option value="">PC</option>
-                </select>
-            </div>
-        </div>
-        <div class="list">
-            <p>Which type of experience do you prefer</p>
-            <ul>
-                <li>
+                <div class="formrow center">
+                    <p>Which Genres do you play? (select all that apply)</p>
+                </div>
+
+                <div class="grid">
+                    <div class="grid-item">
+                        <label for="">First Person Shooter</label>
+                        <input type="checkbox" name="choices" id="" value="choices">
+                    </div>
+                    <div class="grid-item">
+                        <label for="">First Person Shooter</label>
+                        <input type="checkbox" name="choices" id="" value="choices">
+                    </div>
+                    <div class="grid-item">
+                        <label for="">First Person Shooter</label>
+                        <input type="checkbox" name="choices" id="" value="choices">
+                    </div>
+                    <div class="grid-item">
+                        <label for="">First Person Shooter</label>
+                        <input type="checkbox" name="choices" id="" value="choices">
+                    </div>
+                    <div class="grid-item">
+                        <label for="">First Person Shooter</label>
+                        <input type="checkbox" name="choices" id="" value="choices">
+                    </div>
+                </div>
+                <hr>
+                <div class="formrow center self-center">
                     <div class="label">
-                        <label for="">Solo Campaigns / Story Mode</label>
+                        <label id="comments" for="comments">Additional Comments</label>
                     </div>
                     <div class="input">
-                        <input type="radio" id="" name="choices" value="choices">
+                        <textarea name="" id="text-area" cols="30" rows="10"></textarea>
                     </div>
-                </li>
-                <li>
-                    <div class="label">
-                        <label for="">Cooperative Gameplay</label>
-                    </div>
-                    <div class="input">
-                        <input type="radio" id="" name="choices" value="choices">
-                    </div>
-                </li>
-                <li>
-                    <div class="label">
-                        <label for="">Online PVP</label>
-                    </div>
-                    <div class="input">
-                        <input type="radio" id="" name="choices" value="choices">
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="formrow">
-            <label for="dropdown">Select on option</label>
-            <select name="" id="dropdown">
-                <option disabled-value="default">Select</option>
-                <option value="">Something</option>
-                <option value="">Something</option>
-                <option value="">Something</option>
-            </select>
-        </div>
-        <div class="formrow">
-            Which Genres do you play? (select all that apply)
-            <ul>
-                <li>
-                    <label for="">First Person Shooter</label>
-                    <input type="checkbox" name="choices" id="" value="choices">
-                </li>
-                <li>
-                    <label for="">Third Person Shooter</label>
-                    <input type="checkbox" name="choices" id="" value="choices">
-                </li>
-                <li>
-                    <label for="">RPG</label>
-                    <input type="checkbox" name="choices" id="" value="choices">
-                </li>
-                <li>
-                    <label for="">Sports / Racing</label>
-                    <input type="checkbox" name="choices" id="" value="choices">
-                </li>
-                <li>
-                    <label for="">Puzzle</label>
-                    <input type="checkbox" name="choices" id="" value="choices">
-                </li>
-            </ul>
-        </div>
-        <div class="formrow">
-            <label for="comments">Additional Comments</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <button id="submit">Submit</button>
-        </div>
-    </form>
+                </div>
+                <div class="formrow center">
+                    <button id="submit">Submit</button>
+                </div>
+        </form>
+    </div>
 </body>
 
 </html>
