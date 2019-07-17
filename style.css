@@ -4,51 +4,55 @@ body {
 }
 
 h1, h2, p {
+    color: whitesmoke;
     margin:1em;
 }
 
+h1 {
+    font-size: 2em;
+    font-family: 'DM Serif Text', serif;
+}
+
 p {
+    font-family: 'Literata', serif;
     margin: 1em;
 }
 
 .background {
-    background-color: orangered;
+    background-color:#d9d9d9;
 }
 
 .formcolumn {
-    background-color: lightseagreen;
+    background-color: #666699;
+    border: solid whitesmoke 1px;
 }
 
 p {
     margin: 1em;
 }
 
-.label {
+label { 
+    font-family: 'Literata', serif;
+    color: whitesmoke;
     margin: 1em;
 }
 
 .input { 
-    margin: 1em;
+    /* margin: 1em; */
 }
 
 .formrow {
     display: flex;
     margin: 1em;
+    justify-content: space-around;
 }
 
 .list {
     text-align: left;
 }
 
-#select-platform {
-}
-
 .center {
     justify-content: center;
-}
-
-.self-center {
-    align-items: center;
 }
 
 #main-info {
@@ -67,9 +71,25 @@ p {
 }
 
 #text-area {
-    width: 200px;
+    width: 500px;
 }
 
 #submit {
+    width: 75px;
+    height: auto;
     margin: 1em;
+    margin-bottom: 3em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 50px;
+    grid-gap: 1em;
+    margin: 1em;
+    justify-items: center;
+}
+
+.grid-item {
+    grid-column: 2/4;
 }
